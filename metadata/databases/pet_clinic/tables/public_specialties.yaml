@@ -1,0 +1,11 @@
+table:
+  name: specialties
+  schema: public
+array_relationships:
+  - name: vet_specialties
+    using:
+      foreign_key_constraint_on:
+        column: specialty_id
+        table:
+          name: vet_specialties
+          schema: public

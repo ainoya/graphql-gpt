@@ -1,0 +1,18 @@
+table:
+  name: pets
+  schema: public
+object_relationships:
+  - name: owner
+    using:
+      foreign_key_constraint_on: owner_id
+  - name: type
+    using:
+      foreign_key_constraint_on: type_id
+array_relationships:
+  - name: visits
+    using:
+      foreign_key_constraint_on:
+        column: pet_id
+        table:
+          name: visits
+          schema: public

@@ -1,0 +1,10 @@
+table:
+  name: vet_specialties
+  schema: public
+object_relationships:
+  - name: specialty
+    using:
+      foreign_key_constraint_on: specialty_id
+  - name: vet
+    using:
+      foreign_key_constraint_on: vet_id

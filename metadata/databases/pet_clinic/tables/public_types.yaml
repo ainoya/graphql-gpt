@@ -1,0 +1,11 @@
+table:
+  name: types
+  schema: public
+array_relationships:
+  - name: pets
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: pets
+          schema: public

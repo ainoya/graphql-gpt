@@ -1,0 +1,7 @@
+- "!include public_owners.yaml"
+- "!include public_pets.yaml"
+- "!include public_specialties.yaml"
+- "!include public_types.yaml"
+- "!include public_vet_specialties.yaml"
+- "!include public_vets.yaml"
+- "!include public_visits.yaml"
